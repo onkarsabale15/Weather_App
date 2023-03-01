@@ -19,6 +19,5 @@ https.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}
 })
 
 app.get('/', (req,res)=>{
-    console.log("A New User Just Connected")
-    res.send(dta)
+    res.send(dta.weather[0])
 });
