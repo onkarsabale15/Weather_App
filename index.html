@@ -6,40 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
+    <script src="https://kit.fontawesome.com/4207869540.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Weather Website</h1>
-    </header>
-    <main>
-        <div class="location">
-            <h2>Enter your location</h2>
-            <form>
-                <input type="text" placeholder="Enter a city or zip code">
-                <button type="submit">Get Weather</button>
-            </form>
-        </div>
-        <div class="weather">
-            <div class="icon">
-                <img src="https://www.weatherbit.io/static/img/icons/r01d.png" alt="Weather icon">
+    <div class="main">
+        <div class="upper">
+            <div class="location">
+                <span><i class="fa-solid fa-location-crosshairs"></i>Your Current Location</span>
+                <p id="location-desc">Chinchvad, MH, IN</p>
             </div>
-            <div class="details">
-                <h2>Current Weather</h2>
-                <p class="temperature">25&deg;C</p>
-                <p class="condition">Rain</p>
-                <div class="stats">
-                    <p><span>Humidity:</span> 60%</p>
-                    <p><span>Wind Speed:</span> 10 km/h</p>
-                    <p><span>Pressure:</span> 1013 hPa</p>
+            <div class="img">
+                <img src="" alt="Can't Load Image" srcset="https://openweathermap.org/img/wn/03d@4x.png">
+                <div class="temp">
+                    20&deg;C
+                </div>
+            </div>
+            <span id="weather-main">Clouds</span>
+            <div class="general-weather">
+                <div class="general-wind-speed">
+                    <i class="fa-solid fa-wind"></i>5km/h
+                </div>
+                <div class="general-humidity">
+                    <i class="fa-solid fa-droplet"></i>7%
+                </div>
+                <div class="general-pressure">
+                    <img src="/images/air pressure.png">0.533mBar
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 Weather Website</p>
-    </footer>
+        <div class="lower">
+            <div class="temp card">
+                <i class="fa-solid fa-temperature-low"></i><br>
+                Temp:281.88 <br>feels like:280.89 <br>temp min:280.34 <br> temp max: 282.63
+            </div>
+            <div class="level card">
+                <i class="fa-solid fa-arrow-up-from-water-pump"></i><br>
+                ground level:919 <br> sea level:1005
+            </div>
+            <div class="visibility card">
+                <i class="fa-sharp fa-regular fa-eye"></i><br>
+                visibility:1000
+                <br>
+            </div>
+            <div class="wind card">
+                <i class="fa-solid fa-wind"></i><br>
+                Speed:1.97 <br> direction:204 <br> Gust:3.78
+            </div>
+            <div class="sun card">
+                <i class="fa-solid fa-sun"></i> <br>
+                Sunrise:1678254125 <br> Sunset:1678295523
+            </div>
+        </div>
+    </div>
     <script src="/js/script.js"></script>
 </body>
 
