@@ -11,52 +11,45 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="container">
         <div class="upper">
             <div class="location">
-                <span><i class="fa-solid fa-location-crosshairs"></i>Your Current Location</span>
-                <p id="location-desc">Chinchvad, MH, IN</p>
+                <div class="lin"><i class="fa-solid fa-location-crosshairs"></i><span>Your Current Location</span></div>
+                <br>
+                <div id="location-desc"></div>
             </div>
-            <div class="img">
-                <img src="" alt="Can't Load Image" srcset="https://openweathermap.org/img/wn/03d@4x.png">
-                <div class="temp">
-                    20&deg;C
+            <div class="imgg">
+                <img id="imgg-we-image" alt="Can't Load Image" src="">
+                <div class="temp-img" id="temp-img">
                 </div>
             </div>
-            <span id="weather-main">Clouds</span>
+            <span id="weather-main" class="weather-main">
+                Clouds
+            </span>
             <div class="general-weather">
-                <div class="general-wind-speed">
-                    <i class="fa-solid fa-wind"></i>5km/h
+                <div class="general-wind-speed" id="general-wind-speed">
+                    5km/h
                 </div>
-                <div class="general-humidity">
-                    <i class="fa-solid fa-droplet"></i>7%
+                <div class="general-humidity" id="general-humidity">
+                    7%
                 </div>
-                <div class="general-pressure">
-                    <img src="/images/air pressure.png">0.533mBar
+                <div class="general-pressure" id="general-pressure">
+                    0.533mBar
                 </div>
             </div>
         </div>
         <div class="lower">
-            <div class="temp card">
-                <i class="fa-solid fa-temperature-low"></i><br>
-                Temp:281.88 <br>feels like:280.89 <br>temp min:280.34 <br> temp max: 282.63
+            <div class="temp card" id="temp">
+                
             </div>
-            <div class="level card">
-                <i class="fa-solid fa-arrow-up-from-water-pump"></i><br>
-                ground level:919 <br> sea level:1005
+            <div class="level card" id="level">
             </div>
-            <div class="visibility card">
-                <i class="fa-sharp fa-regular fa-eye"></i><br>
-                visibility:1000
+            <div class="visibility card" id="visibility">
                 <br>
             </div>
-            <div class="wind card">
-                <i class="fa-solid fa-wind"></i><br>
-                Speed:1.97 <br> direction:204 <br> Gust:3.78
+            <div class="wind card" id="wind">
             </div>
-            <div class="sun card">
-                <i class="fa-solid fa-sun"></i> <br>
-                Sunrise:1678254125 <br> Sunset:1678295523
+            <div class="sun card" id="sun">
             </div>
         </div>
     </div>
