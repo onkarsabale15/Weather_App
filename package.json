@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "built": "npm i"
+    "run" :"npm init -y"
+    "build": "npm i"
   },
   "author": "",
   "license": "ISC",
