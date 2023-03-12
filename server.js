@@ -23,6 +23,7 @@ app.post('/', (req, res) => {
         resp.on('data', (data) => {
             data = JSON.parse(data)
             res.send(data)
+            console.log("Response Sent")
         })
     })
 });

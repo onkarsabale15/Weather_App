@@ -3,16 +3,14 @@ body {
     padding: 0;
     background: linear-gradient(to top right, rgb(129, 190, 226), rgb(209, 223, 161) 50%, rgb(241, 217, 170));
 }
-
 .container {
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .upper {
-    background: linear-gradient(to top right, rgb(129, 190, 226), rgb(209, 223, 161) 50%, rgb(241, 217, 170));
+    background: linear-gradient(to bottom left, rgb(129, 190, 226), rgb(198, 248, 246) 50%, rgb(241, 217, 170));
     border: white solid 2px;
     border-radius: 10px;
     margin-top: 1%;
@@ -24,26 +22,24 @@ body {
     height: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
 .location {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .lin {
     font-weight: bold;
+    background-color: beige;
+    padding: 0.25%;
+    border-radius: 25vh;
 }
-
 .lin span {
     color: gray;
 }
-
 .location-desc {
     background-color: azure;
 }
-
 .imgg {
     display: flex;
     flex-wrap: wrap;
@@ -51,12 +47,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .imgg img {
     height: auto;
     width: 25%;
 }
-
 .temp-img {
     height: auto;
     width: 25%;
@@ -65,7 +59,6 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
 .weather-main {
     background-color: antiquewhite;
     position: relative;
@@ -80,38 +73,32 @@ body {
     width: fit-content;
     height: auto;
 }
-
 .general-weather {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 .general-weather i {
     height: 2%;
 }
-
 .general-pressure img {
     height: 2%;
     width: 2%;
 }
-
 .lower {
     height: 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 .card i {
     display: flex;
     justify-content: start;
 }
-
 .card {
     padding: 5%;
     margin: 10%;
-    background: linear-gradient(to top right, rgb(129, 190, 226), rgb(209, 223, 161) 50%, rgb(241, 217, 170));
+    background: linear-gradient(to bottom left, rgb(129, 190, 226), rgb(213, 252, 247) 50%, rgb(241, 217, 170));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,10 +107,16 @@ body {
     border-radius: 1vh;
     min-width: 7vw;
 }
-
 @media (max-width: 600px) {
     .lower {
         flex-direction: column;
         min-width: 60vw;
     }
+}
+.lin {
+    cursor: pointer;
+}
+.lin :hover{
+    font-weight: bold;
+    background-color: burlywood;
 }

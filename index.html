@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +8,12 @@
     <script src="https://kit.fontawesome.com/4207869540.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
     <div class="container">
         <div class="upper">
             <div class="location">
-                <div class="lin"><i class="fa-solid fa-location-crosshairs"></i><span>Your Current Location</span></div>
+                <div class="lin" onclick="{rel()}">
+                    <i class="fa-solid fa-location-crosshairs"></i><span>Your Current Location</span></div>
                 <br>
                 <div id="location-desc"></div>
             </div>
@@ -24,23 +23,19 @@
                 </div>
             </div>
             <span id="weather-main" class="weather-main">
-                Clouds
             </span>
             <div class="general-weather">
                 <div class="general-wind-speed" id="general-wind-speed">
-                    5km/h
                 </div>
                 <div class="general-humidity" id="general-humidity">
-                    7%
+
                 </div>
                 <div class="general-pressure" id="general-pressure">
-                    0.533mBar
                 </div>
             </div>
         </div>
         <div class="lower">
             <div class="temp card" id="temp">
-                
             </div>
             <div class="level card" id="level">
             </div>
@@ -55,5 +50,4 @@
     </div>
     <script src="/js/script.js"></script>
 </body>
-
 </html>
